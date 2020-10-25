@@ -148,7 +148,7 @@ public class ValidateUserRegistrationTest {
 		}
 
 		@Test
-		public void testPassword2WhenWeUseLessThan8CharWithAtleastOneUpperCase_thenAssertionSad() {
+		public void testPassword2WhenWeUseLessThan8CharWithoutAtleastOneUpperCase_thenAssertionSad() {
 			boolean result = obj.isValidPasswordAccToRule2("a12@#dfg");
 			assertEquals(true, result);
 			System.out.println("Fail To Pass TestCase");
